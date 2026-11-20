@@ -1,0 +1,15 @@
+# FastAPI后端依赖
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# LLM调用（OpenAI兼容接口，core/llm.py）
+openai>=1.0.0
+
+# 向量数据库（长期记忆，core/memory.py 用到 query_points）
+qdrant-client>=1.10.0
+
+# 联网搜索（景点/美食/音乐工具，tool/search.py）
+tavily-python>=0.3.0
